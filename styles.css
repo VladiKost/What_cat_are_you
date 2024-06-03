@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: mainText;
+    src: url(Fonts/Oswald-VariableFont_wght.ttf);
+   }
+   @keyframes catTalk {
+    from {
+        background-image: url(Images/Idle.png);
+
+    }
+    25%{
+        background-image: url(Images/Idle.png);
+    }
+    50%{
+        background-image: url(Images/Talk1.png);
+    }
+
+    to {
+        background-image: url(Images/Talk1.png);
+    }
+  }
+  @keyframes catTalk1 {
+    from {
+        background-image: url(Images/Idle.png);
+
+    }
+    25%{
+        background-image: url(Images/Idle.png);
+    }
+    50%{
+        background-image: url(Images/Talk2.png);
+    }
+
+    to {
+        background-image: url(Images/Talk2.png);
+    }
+  }
+  @keyframes catTalk2 {
+    from {
+        background-image: url(Images/Idle.png);
+
+    }
+    25%{
+        background-image: url(Images/Idle.png);
+    }
+    50%{
+        background-image: url(Images/Talk3.png);
+    }
+
+    to {
+        background-image: url(Images/Talk3.png);
+    }
+  }
+
+
+.mainContainer{
+    font-family: mainText;
+    width: auto;
+    height: 977px;
+    background-color: rgb(3, 128, 96);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    opacity: 0;
+}
+.cat{
+    position: absolute;
+    left: auto;
+    top: auto;
+    scale: 10%;
+    width: 461px;
+    height: 609px;
+    background-image: url(Images/Idle.png);
+    background-size:auto;
+}
+
+.textCloud{
+    position: relative;
+    scale: 0%;
+    right: 550px;
+    bottom: 650px;
+    opacity: 0;
+}
+.introText{
+    position:relative;
+    left: 230px;
+    bottom: 710px;
+    width: 660px;
+    height: 260px;
+    font-size: 250%;
+    opacity: 0;
+}
+.okButton{
+    transition: all 0.5s ease;
+    position: relative;
+    left: 450px;
+    bottom: 750px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    opacity: 0;
+    scale: 0%;
+}
+.okButtonText{
+    transition: all 0.1s ease;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255, 122, 122, 0.158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.okButtonText:hover{
+    font-size: 150%;
+    cursor: pointer;
+    scale: 110%;
+    border-radius: 10px;
+}
+.okButtonText:active{
+    font-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+.yesButton{
+    transition: all 0.5s ease;
+    position: relative;
+    left: 560px;
+    bottom: 825px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    opacity: 0;
+    scale: 0%;
+}
+.yesButtonText{
+    transition: all 0.1s ease;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 255, 115, 0.062);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yesButtonText:hover{
+    background-color: rgba(0, 255, 115, 0.699);
+    font-size: 150%;
+    cursor: pointer;
+    scale: 110%;
+    border-radius: 10px;
+}
+.yesButtonText:active{
+    font-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+.noButton{
+    transition: all 0.5s ease;
+    position: relative;
+    left: 340px;
+    bottom: 875px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    opacity: 0;
+    scale: 0%;
+}
+.noButtonText{
+    transition: all 0.1s ease;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255, 122, 122, 0.158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noButtonText:hover{
+    background-color: rgba(255, 0, 0, 0.699);
+    font-size: 150%;
+    cursor: pointer;
+    scale: 110%;
+    border-radius: 10px;
+}
+.noButtonText:active{
+    font-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+/* Кнопка пропуска
+.skipButton{
+    position: absolute;
+    left: 500px;
+    top: 800px;
+    height: 100px;
+    opacity: 1;
+    scale: 1;
+}
+.skipText{
+    transition: all 0.1s ease;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.skipText:hover{
+    background-color: rgba(238, 255, 0, 0.521);
+    font-size: 150%;
+    cursor: pointer;
+    scale: 110%;
+    border-radius: 10px;
+}
+.skipText:active{
+    font-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+*/
+
+.test{
+    transition: all 0.5s ease;
+    transform: translate(-300px);
+    margin-top: 50px;
+    margin-right: 50px;
+    border-style: solid;
+    background-color: rgb(199,213,229);
+    width: 600px;
+    height: auto;
+    opacity: 0;
+    scale: 0;
+    text-align: center;
+    border: 10px solid;
+    border-radius: 50px;
+    border-color: rgb(48,185,170);
+}
+
+.upPart{
+    width: auto;
+    height: auto;
+
+}
+.header{
+    width: auto;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    
+}
+.questionText{
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 30px rgb(49,209,194);
+    background-color: rgb(255, 187, 0);
+    border-radius: 50px;
+}
+.bottomPart{
+    width: auto;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+.answerZone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.answerButtonText{
+    transition: all 0.1s ease;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 90%;
+}
+.answerButtonText:hover{
+    text-shadow: 0px 0px 50px rgb(49,209,194);
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+    scale: 110%;
+    border-radius: 10px;
+}
+.answerButtonText:active{
+    font-size: 90%;
+}
+.nextButton{
+    font-size: 80%;
+    opacity: 30%;
+}
+ 
+.finalCard{
+    position: absolute;
+    left: auto;
+    top: auto;
+    padding: 20px;
+    transition: all 1s ease;
+    opacity: 0;
+    scale: 0;
+    width: auto;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 10px solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+.cardText{
+    transition: all 1s ease;
+    border-radius: 50px;
+    opacity: 0;
+    scale: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.catName{
+    transition: all 1s ease;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-size: 45px;
+    color: aliceblue;
+    text-shadow: 0px 0px 20px #000;
+    text-align: center;
+}
+canvas{
+    border-radius: 50px;
+    font-family: mainText;
+}
+.catImage{
+    overflow:hidden;
+    border-radius: 50px;
+
+}
+.IMG{
+    transition: all 1s ease;
+    width: 600px;
+    height: 600px;
+    background-image: url(Images/ИконкаКота2.png);
+}
+
+.catDescr{
+    padding-top: 15px;
+    font-size: 15px;
+    color: aliceblue;
+    text-shadow: 0px 0px 30px #000;
+    border-radius: 50px;
+    width: 700px;
+    height: auto;
+}
